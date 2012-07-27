@@ -29,6 +29,7 @@ func init() {
 	fieldType["Changes"] = Multiline
 	fieldType["Checksums-Sha1"] = Multiline
 	fieldType["Checksums-Sha256"] = Multiline
+	fieldType["Package-List"] = Multiline
 }
 
 // Parses a Debian control file and returns a slice of Paragraphs.
