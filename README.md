@@ -4,27 +4,29 @@ Install:
 
 …and then use it in your code:
 
-    package main
+```go
+package main
 
-    import (
-        "github.com/mstap/godebiancontrol"
-        "os"
-        "log"
-    )
+import (
+    "github.com/mstap/godebiancontrol"
+    "os"
+    "log"
+)
     
-    func main() {
-        file, err := os.Open("/var/lib/apt/lists/http.debian.net_debian_dists_testing_main_binary-amd64_Packages")
-        if err != nil {
-            log.Fatal(err)
-        }
-        defer file.Close()
-        
-        p, err := godebiancontrol.Parse(file)
-        if err != nil {
-            log.Fatal(err)
-        }
-        log.Printf("The first package in the list is %s\n", p[0]["Package"])
+func main() {
+    file, err := os.Open("/var/lib/apt/lists/http.debian.net_debian_dists_testing_main_binary-amd64_Packages")
+    if err != nil {
+        log.Fatal(err)
     }
+    defer file.Close()
+        
+    p, err := godebiancontrol.Parse(file)
+    if err != nil {
+        log.Fatal(err)
+    }
+    log.Printf("The first package in the list is %s\n", p[0]["Package"])
+}
+```
 
 Find the documentation at:
 
