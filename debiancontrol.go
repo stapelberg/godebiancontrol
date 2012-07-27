@@ -2,7 +2,7 @@
 // © 2012 Michael Stapelberg (see also: LICENSE)
 
 // Package debiancontrol implements a parser for Debian control files.
-package debiancontrol
+package godebiancontrol
 
 import (
 	"bufio"

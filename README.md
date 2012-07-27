@@ -1,13 +1,13 @@
 Install:
 
-    go get github.com/mstap/go-debian-control/debiancontrol
+    go get github.com/mstap/godebiancontrol
 
 …and then use it in your code:
 
     package main
 
     import (
-        "github.com/mstap/go-debian-control/debiancontrol"
+        "github.com/mstap/godebiancontrol"
         "os"
         "log"
     )
@@ -19,7 +19,7 @@ Install:
         }
         defer file.Close()
         
-        p, err := debiancontrol.Parse(file)
+        p, err := godebiancontrol.Parse(file)
         if err != nil {
             log.Fatal(err)
         }
@@ -28,4 +28,4 @@ Install:
 
 Find the documentation at:
 
-http://go.pkgdoc.org/github.com/mstap/go-debian-control/debiancontrol
+http://go.pkgdoc.org/github.com/mstap/godebiancontrol

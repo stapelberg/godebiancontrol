@@ -1,11 +1,11 @@
 // vim:ts=4:sw=4:noexpandtab
 // © 2012 Michael Stapelberg (see also: LICENSE)
-package debiancontrol_test
+package godebiancontrol_test
 
 import (
 	"bytes"
 	"fmt"
-	"go-debian-control/debiancontrol"
+	"github.com/mstap/godebiancontrol"
 	"log"
 	"os"
 	"testing"
@@ -73,7 +73,7 @@ Size: 798186
 MD5sum: 3c7dbecd76d5c271401860967563fa8c
 SHA1: 2e94f3faa5d4d617061f94076b2537d15fbff73f
 SHA256: 2894bc999b3982c4e57f100fa31e21b52e14c5f3bc7ad5345f46842fcdab0db7`)
-	paragraphs, err := debiancontrol.Parse(contents)
+	paragraphs, err := godebiancontrol.Parse(contents)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -102,7 +102,7 @@ func ExampleParse() {
 	}
 	defer file.Close()
 
-	paragraphs, err := debiancontrol.Parse(file)
+	paragraphs, err := godebiancontrol.Parse(file)
 	if err != nil {
 		log.Fatal(err)
 	}
