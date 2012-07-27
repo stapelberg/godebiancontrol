@@ -1,4 +1,5 @@
 // vim:ts=4:sw=4:noexpandtab
+// © 2012 Michael Stapelberg (see also: LICENSE)
 
 // Package debiancontrol implements a parser for Debian control files.
 package debiancontrol
