@@ -83,8 +83,12 @@ func Parse(input io.Reader) (paragraphs []Paragraph, err error) {
 		}
 	}
 
-	// Append last paragraph
-	paragraphs = append(paragraphs, paragraph)
+	// Append last paragraph, but only if it is non-empty.
+	// The case of an empty last paragraph happens when the file ends with a
+	// blank line.
+	if len(paragraph) > 0 {
+		paragraphs = append(paragraphs, paragraph)
+	}
 
 	return
 }
