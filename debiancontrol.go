@@ -77,7 +77,7 @@ func Parse(input io.Reader) (paragraphs []Paragraph, err error) {
 		} else {
 			split := strings.Split(trimmed, ":")
 			key := split[0]
-			value := strings.TrimLeftFunc(split[1], unicode.IsSpace)
+			value := strings.TrimLeftFunc(trimmed[len(key)+1:], unicode.IsSpace)
 			paragraph[key] = value
 			lastkey = key
 		}
