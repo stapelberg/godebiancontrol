@@ -1,6 +1,6 @@
 Install:
 
-    go get github.com/mstap/godebiancontrol
+    go get github.com/stapelberg/godebiancontrol
 
 …and then use it in your code:
 
@@ -8,7 +8,7 @@ Install:
 package main
 
 import (
-    "github.com/mstap/godebiancontrol"
+    "github.com/stapelberg/godebiancontrol"
     "os"
     "log"
 )
@@ -30,4 +30,4 @@ func main() {
 
 Find the documentation at:
 
-http://go.pkgdoc.org/github.com/mstap/godebiancontrol
+http://go.pkgdoc.org/github.com/stapelberg/godebiancontrol

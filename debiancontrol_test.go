@@ -1,11 +1,11 @@
 // vim:ts=4:sw=4:noexpandtab
-// © 2012 Michael Stapelberg (see also: LICENSE)
+// © 2012-2014 Michael Stapelberg (see also: LICENSE)
 package godebiancontrol_test
 
 import (
 	"bytes"
 	"fmt"
-	"github.com/mstap/godebiancontrol"
+	"github.com/stapelberg/godebiancontrol"
 	"log"
 	"os"
 	"testing"
