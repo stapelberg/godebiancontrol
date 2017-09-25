@@ -30,6 +30,9 @@ func init() {
 	fieldType["Checksums-Sha1"] = Multiline
 	fieldType["Checksums-Sha256"] = Multiline
 	fieldType["Package-List"] = Multiline
+	fieldType["MD5Sum"] = Multiline
+	fieldType["SHA1"] = Multiline
+	fieldType["SHA256"] = Multiline
 }
 
 // Parses a Debian control file and returns a slice of Paragraphs.
