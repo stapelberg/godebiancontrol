@@ -30,4 +30,4 @@ func main() {
 
 Find the documentation at:
 
-http://go.pkgdoc.org/github.com/stapelberg/godebiancontrol
+https://godoc.org/github.com/stapelberg/godebiancontrol
