@@ -1,3 +1,9 @@
+## Maintenance mode
+
+Note that new projects should prefer to use https://pault.ag/go/debian instead of this package.
+
+## Usage
+
 Install:
 
     go get github.com/stapelberg/godebiancontrol
